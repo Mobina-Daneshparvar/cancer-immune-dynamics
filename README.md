@@ -8,7 +8,7 @@ The codes are organized in the order in which their corresponding results appear
 
 ## Overview
 
-In this study, we developed and experimentally validated a system of ordinary differential equations (ODEs) to model the dynamics of murine triple-negative breast cancer (TNBC) subpopulations, capturing tumor heterogeneity, and interactions with immune cells. Specifically, the model includes:
+In this study, we developed a system of ordinary differential equations (ODEs) to model the dynamics of murine triple-negative breast cancer (TNBC) subpopulations, capturing tumor heterogeneity, and interactions with immune cells. Specifically, the model includes:
 
 - The tumor suppression effect of immune killer cells
 - The immunosuppressive role of myeloid-derived suppressor cells (MDSCs)
@@ -33,16 +33,16 @@ The repository includes scripts for:
 3. **Phase-Like Diagram Generation**  
    - Visualization of system behavior under different treatment regimens. The x-axis represents chemotherapy exposure duration, and the y-axis represents either immune boosting duration or drug-free periods within each cycle.  
    - Tumor fate after a specified simulation period is color-coded:  
-     - **Red**: Tumor escape  
-     - **Blue**: Dormancy  
-     - **Green**: Tumor elimination
+     - **Red**: Tumor Escape  
+     - **Blue**: Tumor Dormancy  
+     - **Green**: Tumor Elimination
 
 4. **Comparative Analysis**  
-   - Scripts to compare the "escape regions" (red areas) across different simulation conditions, as described in Section 3 of the article.
+   - Scripts to compare the "escape regions" (red areas) across different simulation conditions, as described in Section 3.
 
 ## Requirements
 
-- MATLAB R2020b or later (earlier versions may also work but are untested)
+- MATLAB R2021b (earlier or later versions may also work but are untested)
 - Optimization Toolbox (for `lsqcurvefit`)
 - Basic knowledge of MATLAB scripting
 
@@ -50,4 +50,4 @@ The repository includes scripts for:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/TNBC-ImmunoChemo-Simulations.git
+   git clone https://github.com/yourusername/cancer-immune-dynamics.git
