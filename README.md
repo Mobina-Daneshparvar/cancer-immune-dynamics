@@ -50,4 +50,4 @@ The repository includes scripts for:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/cancer-immune-dynamics.git
+   git clone https://github.com/Mobina-Daneshparvar/cancer-immune-dynamics.git
