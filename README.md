@@ -55,13 +55,13 @@ The repository includes scripts for:
 2. Open MATLAB and navigate to the folder.
 
 3. Run scripts (refer to the script headers for specific usage).
-
-##Citation
+   
+## Citation
 
 If you use this code in your work, please cite our article:
 
 Full citation will go here once the paper is published
 
-##License
+## License
 
 This project is licensed under the [MIT License](LICENSE).
