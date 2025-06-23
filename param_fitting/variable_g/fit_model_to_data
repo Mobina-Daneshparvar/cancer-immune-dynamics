@@ -1,0 +1,24 @@
+
+function V = fit_model_to_data(x, xdata)
+% FIT_MODEL_TO_DATA - Solves the ODE with a given parameter and interpolates the result.
+% Inputs:
+%   x     - parameter value (g) to evaluate the model
+%   xdata - time points where model values are required
+% Output:
+%   V - model prediction at xdata time points 
+
+global g
+global y
+
+g = x;               % Update global parameter
+initial_condition = [1e5];  % Initial number of MDSCs in the experiment
+
+% Solve ODE over time interval
+z = ode45(@mdsc_dynamics, [0 0.125], initial_condition);
+
+% Interpolate solution at data time points
+v = interp1(z.x, z.y, xdata);
+
+% Transforming to the same escale as experimental data  for comparison 
+V = v / 1e5;
+end
