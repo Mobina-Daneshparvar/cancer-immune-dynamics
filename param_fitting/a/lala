@@ -1,0 +1,16 @@
+
+function dp = mdsc_dynamics(t, p)
+
+% MDSC_DYNAMICS - Defines the differential equation for MDSC population dynamics.
+% Inputs:
+%   t - time (day)
+%   p - current number of the MDSC population
+% Output:
+%   dp - derivative (rate of change) of MDSC population
+
+dp = zeros(1,1);  % Initialize output
+global g          % Model parameter to be estimated (death rate of MDSCs by RGX)
+d = 2.0082;       % Natural death rate of MDSCs (per day)
+
+dp = -d*p - g*p;  % ODE: MDSC dynamics
+end
